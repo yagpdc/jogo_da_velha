@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+:root {
+  --background-color-primary: #e6cba5;
+  --background-color-secodary: #e6b39a;
+  --background-color-detail: #5a938a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tela-inicial {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6cba5;
+  width: 50%;
+  height: 100%;
+}
+
+.container-right > #nome {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.container-right > #img {
+  height: 60%;
+  margin-right: 20px;
+}
+
+.container-left {
+  background-color: #e6b39a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.container-left > #player1,
+#player2,
+#login {
+  font-size: 30px;
+  height: 50px;
+  margin: 100px 0 0 150px;
+  width: 50%;
+}
+
+#player1,
+#player2 {
+  font-family: "Raleway", sans-serif;
+  padding: 20px;
+  border: none;
+}
+
+#login {
+  background-color: #5a938a;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#login:hover {
+  background-color: #458d82;
+  transition: background-color ease-in-out 0.5s;
+}
+
+#game-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height:100vh;
+  width: 100vw;
+  background-color: #e6b39a;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+#game-modal.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#header-game {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+
+
+#gameContainer {
+    font-family: "Finger Paint", cursive;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 5px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#cellContainer .cell:nth-child(1),
+#cellContainer .cell:nth-child(2),
+#cellContainer .cell:nth-child(4),
+#cellContainer .cell:nth-child(5),
+#cellContainer .cell:nth-child(7),
+#cellContainer .cell:nth-child(8) {
+    border-right: 5px solid;
+}
+
+#cellContainer .cell:nth-child(4),
+#cellContainer .cell:nth-child(5),
+#cellContainer .cell:nth-child(6),
+#cellContainer .cell:nth-child(7),
+#cellContainer .cell:nth-child(8),
+#cellContainer .cell:nth-child(9)
+ {
+    border-top: 5px solid;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #F2c14e;
+    color: #333;
+    border-color: #F2c14e;
+    font-size: 15px;
+    transition: 200ms transform;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1 {
+
+    margin: 50px;
+}
+
+#restartBtn {
+    margin: 50px;
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="tela-inicial">
+      <div class="container-right">
+        <img id="nome" src="assets/Tic-Tac Toe.png" alt="" />
+        <img id="img" src="/assets/2313956 1.png" />
+      </div>
+      <div class="container-left">
+        <input id="player1" type="text" placeholder="Player 1" />
+        <input id="player2" type="text" placeholder="Player 2" />
+        <button id="login" type="button">START</button>
+      </div>
+    </div>
+    <div id="game-modal" class="hide">
+      <div id="gameContainer">
+          <button id="home">HOME</button>
+        <div id="header-game">
+            <div>
+                <span id="displayp1" >Player 1</span>
+                <span class="winCounterP1"></span>
+            </div>
+            <div>
+                <span id="displayp2" >Player 2</span>
+                <span class="winCounterP2"></span>
+            </div>
+        </div>
+        <h1>Jogo da velha</h1>
+        <div id="cellContainer">
+          <div cellIndex="0" class="cell"></div>
+          <div cellIndex="1" class="cell"></div>
+          <div cellIndex="2" class="cell"></div>
+          <div cellIndex="3" class="cell"></div>
+          <div cellIndex="4" class="cell"></div>
+          <div cellIndex="5" class="cell"></div>
+          <div cellIndex="6" class="cell"></div>
+          <div cellIndex="7" class="cell"></div>
+          <div cellIndex="8" class="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+        <button id="restartBtn">Restart</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
